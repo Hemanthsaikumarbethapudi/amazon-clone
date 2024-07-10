@@ -1,4 +1,4 @@
-import { Carousel } from "./Carousel"
+import { Carousel } from "./"
 
 export const Homepage = () => {
     return (
