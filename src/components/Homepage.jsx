@@ -1,4 +1,4 @@
-import { Carousel, HomepageCard } from "./"
+import { Carousel, HomepageCard, CaraouselCategory, Caraouselproducts } from "./"
 import image from "../asserts/amazon_clone/images/home_grid_1.jpg"
 import image2 from "../asserts/amazon_clone/images/home_grid_2.jpg"
 import image3 from "../asserts/amazon_clone/images/home_grid_3.jpg"
@@ -12,9 +12,9 @@ import image9 from "../asserts/amazon_clone/images/banner_image_2.jpg"
 export const Homepage = () => {
     return (
         <div className="bg-amazonclone-background">
-            <div className="min-w-[1000px] max-w-[1500px] m-auto bg-purple-600">Testing
+            <div className="min-w-[1000px] max-w-[1500px] m-auto bg-white -600">Testing
                 <Carousel />
-                <div className="grid grid-cols-3 xl:grid-cols-4">
+                <div className="grid grid-cols-3 xl:grid-cols-4 -mt-40">
                     <HomepageCard title={"Hi there is suprise for you"}
                         img={image}
                         link={"See the terms and conditions"} />
@@ -40,10 +40,12 @@ export const Homepage = () => {
                         img={image8}
                         link={"Learn more"} />
                 </div>
-                <div>
+                <div className="m-3 pt-8">
                     <img className="xl:hidden" src={image9} />
                 </div>
             </div>
+            <CaraouselCategory />
+            <Caraouselproducts />
         </div>
     )
 }
