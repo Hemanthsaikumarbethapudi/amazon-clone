@@ -8,6 +8,7 @@ import image6 from "../asserts/amazon_clone/images/home_grid_6.jpg"
 import image7 from "../asserts/amazon_clone/images/home_grid_7.jpg"
 import image8 from "../asserts/amazon_clone/images/home_grid_8.jpg"
 import image9 from "../asserts/amazon_clone/images/banner_image_2.jpg"
+import image10 from "../asserts/amazon_clone/images/banner_image.jpg"
 
 export const Homepage = () => {
     return (
@@ -44,8 +45,11 @@ export const Homepage = () => {
                     <img className="xl:hidden" src={image9} />
                 </div>
             </div>
-            <CaraouselCategory />
             <Caraouselproducts />
+            <CaraouselCategory />
+            <div className="h-[200px]">
+                <img className="h-[100%] m-auto" src={image10} />
+            </div>
         </div>
     )
 }
