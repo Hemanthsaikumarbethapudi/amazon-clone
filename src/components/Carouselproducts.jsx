@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 
 const Carouselproducts = () => {
     return (
-        <div className="bg-white m-3 p-3">
+        <div className="bg-white m-3 p-4">
             <div className="p-2 font-semibold text-2xl m-2">Best Sellers</div>
             <Swiper
                 slidesPerView={7}
