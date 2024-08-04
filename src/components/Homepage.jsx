@@ -13,7 +13,7 @@ import image10 from "../asserts/amazon_clone/images/banner_image.jpg"
 export const Homepage = () => {
     return (
         <div className="bg-amazonclone-background">
-            <div className="min-w-[1000px] max-w-[1500px] m-auto bg-white -600">Testing
+            <div className="min-w-[1000px] max-w-[1500px] m-auto bg-white -600">
                 <Carousel />
                 <div className="grid grid-cols-3 xl:grid-cols-4 -mt-40">
                     <HomepageCard title={"Hi there is suprise for you"}
