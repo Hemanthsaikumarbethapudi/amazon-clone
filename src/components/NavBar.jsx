@@ -1,6 +1,6 @@
 import React from 'react'
+import { Search } from "./";
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
-import { Search } from "../components/Search";
 import image1 from "../asserts/amazon_clone/images/amazon.png"
 
 const NavBar = () => {
@@ -35,7 +35,13 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-
+            <div className="flex bg-amazonclone-default text-white space-x-3 text-xs xl:text-sm p-2 pl-6">
+                <div>Today deals</div>
+                <div>Customer Service</div>
+                <div>Sell</div>
+                <div>Gift Cards</div>
+                <div>Amazon Basics</div>
+            </div>
         </header>
     )
 }
