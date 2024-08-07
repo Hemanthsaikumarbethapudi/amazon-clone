@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper/modules";
+import { Link } from "react-router-dom"
 import "swiper/css";
 import "swiper/css/navigation";
 import image0 from "../asserts/amazon_clone/images/product_0_small.jpg"
@@ -27,9 +28,11 @@ const Carouselproducts = () => {
             >
                 {
                     Array.from({ length: 9 }, (_, i) =>
-                        <SwiperSlide key={i}>
-                            <img src={`image${i}`} />
-                        </SwiperSlide>
+                        <Link to={`/product/ ${i}`}>
+                            <SwiperSlide key={i}>
+                                <img src={`image${i}`} />
+                            </SwiperSlide>
+                        </Link>
                     )
                 }
             </Swiper>
